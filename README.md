@@ -9,4 +9,11 @@ Although some cases of resistance in P. nobilis and tolerance in P. rudis and P.
 
 In order to better understand the mechanisms underlying tolerance and resistance, it is essential to investigate genomic variations both between species and among individuals exhibiting differential susceptibility.
 
-The transcriptomes used were obtained from the NCBI SRA and can be found in the 'Selected transcriptomes' section.
+It is therefore essential to obtain a complete genome from a resistant Pinna nobilis individual, which can serve as a reference for comparison with genomes from individuals infected by the parasite Haplosporidium pinnae.
+The reference genome is assembled from transcriptomes of P. nobilis and P. rudis, composed of highly accurate short reads obtained from the NCBI SRA database (see the ‘Selected Transcriptomes’ section). These transcriptomes are presumed to be free from H. pinnae contamination.
+
+To ensure this, the raw data are first “cleaned” using Kraken2 and SeqKit, which detect, identify, and remove potential bacterial contaminations from a database containing most of the known marine bacteria. The quality of the transcriptomic data is then assessed using FastQC (see the FastQC section). Based on these quality reports, Trimmomatic, an open-source software, is used to trim low-quality bases from the beginning and/or end of the reads in order to correct alignment errors. A second FastQC analysis is performed to confirm the improvement in read quality.
+
+High-quality reads are then assembled using Trinity, a de novo assembler that reconstructs transcriptomes from fragmented RNA-Seq reads without the need for a reference genome. The completeness of the assembled transcriptome is assessed using BUSCO, which evaluates whether the assembly is complete, fragmented, or incomplete by searching for conserved, single-copy orthologous genes across a specific taxonomic group.
+
+If the assembly quality is deemed satisfactory, it is processed through ORF Finder (Open Reading Frame Finder) to identify open reading frames (ORFs) within the assembled sequences, allowing the prediction of potential coding regions from randomly fragmented genomic sequences.
