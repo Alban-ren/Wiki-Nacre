@@ -10,7 +10,7 @@ Although some cases of resistance in P. nobilis and tolerance in P. rudis and P.
 In order to better understand the mechanisms underlying tolerance and resistance, it is essential to investigate genomic variations both between species and among individuals exhibiting differential susceptibility.
 
 It is therefore essential to obtain a complete genome from a resistant Pinna nobilis individual, which can serve as a reference for comparison with genomes from individuals infected by the parasite Haplosporidium pinnae.
-The reference genome is assembled from transcriptomes of P. nobilis and P. rudis, composed of highly accurate short reads obtained from the NCBI SRA database (see the ‘Selected Transcriptomes’ section) (#selected-transcriptomes). These transcriptomes are presumed to be free from H. pinnae contamination.
+The reference genome is assembled from transcriptomes of P. nobilis and P. rudis, composed of highly accurate short reads obtained from the NCBI SRA database [Selected transcriptomes](#selected-transcriptomes). These transcriptomes are presumed to be free from H. pinnae contamination.
 
 To ensure this, the raw data are first “cleaned” using Kraken2 and SeqKit, which detect, identify, and remove potential bacterial contaminations from a database containing most of the known marine bacteria. The quality of the transcriptomic data is then assessed using FastQC (see the FastQC section). Based on these quality reports, Trimmomatic, an open-source software, is used to trim low-quality bases from the beginning and/or end of the reads in order to correct alignment errors. A second FastQC analysis is performed to confirm the improvement in read quality.
 
