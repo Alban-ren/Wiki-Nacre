@@ -14,4 +14,6 @@ Seqkit grep -v -f reads_4_Pn_haemocytes_toremove.txt SRR21820831.fastq -o 4_Pn_h
 fastqc 4_Pn_haemocytes_RNA_filtered_fastq
 
 #unreliable data breakdown
-trimmomatic ?
+trimmomatic ? code  -> oui
+
+#galaxy 
