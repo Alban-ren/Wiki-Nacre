@@ -1,3 +1,5 @@
+## Experiment Script
+
 #Percentage of contaminated sequences
 kraken2 --db kraken2/kraken2_custom_db/ --use-names --threads 30 --confidence 0.01 --report 0.New_departure/PE_reads_RNA_Pn/kraken_report_4_Pn_haemocytes.txt --output 0.New_departure/PE_reads_RNA_Pn/kraken_output_4_haemocytes.txt 0.New_departure/PE_reads_RNA_Pn/SRR21820831
 
