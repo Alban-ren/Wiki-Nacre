@@ -4,5 +4,8 @@ FastQC identifies a variety of technical artifacts, including duplicated sequenc
 Input files must be in .fastq, .fastq.gz, or .fq format. Upon completion, FastQC produces two main output files:
 
 An interactive HTML report that visually summarizes key quality metrics, including per-base Phred score distribution, read length distribution, GC content, sequence duplication levels, and more.
+*ex :
 
 A .zip archive containing all raw data and detailed analytical results in plain text format (.txt), which can be further explored or integrated into automated workflows.
+
+In our case, FastQC was used after the application of Kraken2 to assess the quality of the reads, and again following trimming with Trimmomatic to evaluate data quality prior to assembly. You can see the entire script we used for our sample in the [experiment](./Experiment_01.md#experiment-script) section.
