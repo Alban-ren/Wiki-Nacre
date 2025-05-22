@@ -1,0 +1,2 @@
+This Bash script automates the creation of a binary presence/absence matrix of bacterial taxa, based on report files generated
+by Kraken2 (see Kraken2 section). A minimum threshold of 10 assigned reads is applied to consider a taxon as present.
