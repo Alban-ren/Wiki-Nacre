@@ -6,3 +6,9 @@ Bacterial taxa with read counts equal to or above this threshold were selected a
 
 The resulting binary matrix summarizes the presence or absence of bacterial taxa across samples. The objective is to compare bacterial diversity among samples in relation to biological, ecological, or geographic factors. Beta diversity analysis is particularly appropriate for this type of data, as it quantifies variation in species composition between samples or sites of interest (Legendre & De Cáceres, 2013).
 
+To visualize the dispersion index of our samples, we use the RStudio environment to perform beta diversity analysis and generate visualizations based on a binary presence/absence matrix of bacterial taxa. This approach allows us to analyze bacterial taxonomic diversity between samples and to conduct statistical tests assessing β-diversity differences across multiple sample groups. Since our samples originate from various localities (France, Spain, Greece, and Italy), we were able to compare bacterial community compositions across these geographic groups.
+
+To examine these variations, a Principal Coordinates Analysis (PCoA) is conducted. A PERMANOVA (Permutational Multivariate Analysis of Variance) test is then applied to determine whether community structures (i.e., taxonomic compositions) differ significantly between groups, using ecological distances and a permutation-based approach. A test for homogeneity of dispersions is performed afterward to validate the reliability of the PERMANOVA results. Finally, a pairwise PERMANOVA is conducted to compare compositional differences between groups in a multivariate framework. The results of this test are visualized using a heatmap. The complete script used here is available in the truc section.
+
+
+
