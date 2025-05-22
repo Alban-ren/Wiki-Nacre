@@ -4,9 +4,13 @@ The Bash pipeline presented below aims to perform a taxonomic filtering of short
 * Experiment Script
   --
 kraken2 --db kraken2/kraken2_custom_db/ --use-names --threads 30 --confidence 0.01 --report 0.New_departure/PE_reads_RNA_Pn/kraken_report_4_Pn_haemocytes.txt --output 0.New_departure/PE_reads_RNA_Pn/kraken_output_4_haemocytes.txt 0.New_departure/PE_reads_RNA_Pn/SRR21820831
+
 awk -F’\t’ ‘$1==”C” ‘kraken_output_4_Pn_haemocytes.txt > kraken_output_4_Pn_haemocytes_C.txt
+
 cut -f 2 kraken_output_4_Pn_haemocytes_C.txt > reads_4_Pn_haemocytes_toremove.txt
+
 Seqkit grep -v -f reads_4_Pn_haemocytes_toremove.txt SRR21820831.fastq -o 4_Pn_haemocytes_RNA_filtered_fastq
+
 fastqc 4_Pn_haemocytes_RNA_filtered_fastq
 
 trimmomatic ? code  -> oui
