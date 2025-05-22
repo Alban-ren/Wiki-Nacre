@@ -1,0 +1,41 @@
+# Packages
+library(tidyverse)
+library(vegan)       # for beta-diversity
+library(ape)         
+
+# 1. Load matrix
+mat <- read.delim("taxa_presence_absence_min10.tsv", row.names = 1, check.names = FALSE)
+
+# 2. Transpose: row = sample, columns = taxa
+mat_t <- t(mat)
+
+# calculates the sum of each line
+sums <- rowSums(mat_t)
+
+# which lines are empty?
+empty_rows <- which(sums == 0)
+empty_rows
+
+# Create a matrix without empty rows
+mat_t_nonempty <- mat_t[sums > 0, ]
+
+# 3. Calculate Jaccard distance (binary)
+# now Jaccard's calculation
+dist_jaccard <- vegdist(mat_t_nonempty, method = "jaccard", binary = TRUE)
+
+# 4. Performing a PCoA (classic ordination)
+pcoa_res <- cmdscale(dist_jaccard, k = 2, eig = TRUE)
+
+# 5. View
+df_plot <- as.data.frame(pcoa_res$points)
+df_plot$Sample <- rownames(df_plot)
+
+ggplot(df_plot, aes(x = V1, y = V2, label = Sample)) +
+  geom_point(size = 3) +
+  geom_text(vjust = -0.5, size = 3) +
+  labs(title = "Analyse de la diversité bêta (PCoA - Jaccard)",
+       x = "Axe 1", y = "Axe 2") +
+  theme_minimal()
+
+# 6. Produce a dendrogram :
+plot(hclust(dist_jaccard), main = "Clustering (Jaccard)")
