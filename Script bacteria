@@ -47,4 +47,4 @@ while read -r taxon; do
   echo
 done < "$TMPDIR/all_taxa.txt" >> "$OUT"
 
-echo "✅ Binary matrix (≥10 reads) generated : $OUT"
+echo "Binary matrix (≥10 reads) generated : $OUT"
