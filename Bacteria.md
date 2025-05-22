@@ -6,6 +6,7 @@ The script begins by activating strict execution options (set -euo pipefail) to 
 In the first loop, the script iterates over all files starting with report_kraken_F in the directory defined by DIR. For each file, it extracts the sample name from the filename by removing the prefix and, if present, the .txt extension. Then, using the awk command, it extracts line by line the taxon name (field 6, after trimming leading spaces) and the number of reads directly assigned to that taxon (field 3) (Fig. 1). The result is saved as an individual .tsv file for each sample in the temporary directory.
 
 ![Capture d'écran 2025-05-22 120102](https://github.com/user-attachments/assets/76063d9b-04e9-4092-8348-24c9f87e99e0)
+
 Figure 1 : example of a report file fragment
 
 
