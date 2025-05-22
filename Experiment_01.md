@@ -1,4 +1,4 @@
-## Experiment Script
+## Bioinformatic processing of raw reads: taxonomic classification and exclusion
 
 The Bash pipeline presented below aims to perform a taxonomic filtering of reads derived from high-throughput RNA sequencing (ILLUMINA). First, the Kraken2 tool is used with a custom database composed of bacterial taxa in order to assign a taxonomic classification to the reads. The assigned reads (indicated by the status 'C' for classified) are then filtered using the awk command, and their identifiers are extracted using the cut command. These identifiers are then used by the seqkit grep tool to exclude the corresponding reads from the original FASTQ file. This filtering step allows the retention of only unclassified reads, which are presumed to correspond to host-derived sequences.
 * Experiment Script
