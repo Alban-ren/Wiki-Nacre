@@ -1,4 +1,4 @@
-##Assembling the “clean” genomes of Pinna nobilis and Pinna rudis species
+# Assembling the “clean” genomes of Pinna nobilis and Pinna rudis species
 -
 
 It is essential to obtain a complete genome from a healthy Pinna nobilis individual, which can serve as a reference for comparison with genomes from individuals infected by the parasite Haplosporidium pinnae.
