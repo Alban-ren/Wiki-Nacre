@@ -1,5 +1,5 @@
 # Assembling the “clean” genomes of Pinna nobilis and Pinna rudis species
--
+------------------------------------------------------------------------
 
 It is essential to obtain a complete genome from a healthy Pinna nobilis individual, which can serve as a reference for comparison with genomes from individuals infected by the parasite Haplosporidium pinnae.
 The reference genome is assembled from transcriptomes of P. nobilis and P. rudis, composed of highly accurate short reads obtained from the NCBI SRA database. These transcriptomes are presumed to be free from H. pinnae contamination.
