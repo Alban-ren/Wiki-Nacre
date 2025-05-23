@@ -11,10 +11,10 @@ In order to better understand the mechanisms underlying tolerance and resistance
 
 # In this wiki, you will find:
 
-*The different pipelines used for genome assembly of Pinna nobilis (see the readme-geno section),
+* The different pipelines used for genome assembly of Pinna nobilis (see the readme-geno section),
 
-*Explanations of the software and computational tools employed in these analyses (see the general-geno section),
+* Explanations of the software and computational tools employed in these analyses (see the general-geno section),
 
-*The code used for genome-related analyses (see the experiment section).
+* The code used for genome-related analyses (see the experiment section).
 
 You will also find similar explanations and scripts related to the identification of bacterial communities associated with Pinna nobilis and Pinna rudis tissues.
