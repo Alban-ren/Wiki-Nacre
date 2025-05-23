@@ -10,3 +10,4 @@ Finally, the user can specify a comparison scenario from several options (e.g., 
 The resulting graph should look like the one below (fig.1): 
 ![graph_2](https://github.com/user-attachments/assets/90a74edc-a3b4-46bd-9b66-f01cabb11c94)
 
+Figure 1 : Histogram of taxa favouring taxonomic dispersion between Greece and Italy
