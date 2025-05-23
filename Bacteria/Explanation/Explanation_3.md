@@ -6,3 +6,7 @@ This R script performs a SIMPER (Similarity Percentage Analysis) to identify the
 A custom function, run_simper(), is defined to execute the SIMPER analysis between two or more user-defined groups. It filters the data according to the selected scenario and calculates the mean contribution of each taxon to the dissimilarity between groups (without permutation tests in this implementation). The top 20 contributing taxa are extracted and visualized using a bar plot generated with ggplot2, where contributions are displayed as percentages. Taxon names are italicized in accordance with taxonomic conventions. The results are exported both as a CSV table and as a PDF figure.
 
 Finally, the user can specify a comparison scenario from several options (e.g., Greek and Italian subgroups, or comparisons by country or region), which triggers the function with the appropriate groups. This flexible structure allows testing of various biological or geographical aggregation levels to identify the taxa most responsible for bacterial community differentiation—without the need to write custom SIMPER code for each case.
+
+The resulting graph should look like the one below (fig.1): 
+![graph_2](https://github.com/user-attachments/assets/90a74edc-a3b4-46bd-9b66-f01cabb11c94)
+
