@@ -11,7 +11,7 @@ In order to better understand the mechanisms underlying tolerance and resistance
 
 # In this wiki, you will find:
 
-* The different pipelines used for genome assembly of Pinna nobilis (see the readme-geno section),
+* The different pipelines used for genome assembly of Pinna nobilis (see the genomics/README_GENOMIC.md),
 
 * Explanations of the software and computational tools employed in these analyses (see the general-geno section),
 
