@@ -1,3 +1,6 @@
+# Code explanation for Script_SIMPER.R
+-----------------------------------------
+
 This R script performs a SIMPER (Similarity Percentage Analysis) to identify the bacterial taxa that contribute most to the differences in community composition between sample groups. After loading the required packages (tidyverse, vegan, and scales), binary presence/absence data of taxa are imported from a TSV file (taxa_presence_absence_min10.tsv). The matrix is transposed so that each row represents a sample, and empty columns are removed. A metadata table (df_plot) is then created by extracting information from sample names (such as sample number, group, subgroup, country, and region), allowing the encoding of biological and geographical relationships between individuals.
 
 A custom function, run_simper(), is defined to execute the SIMPER analysis between two or more user-defined groups. It filters the data according to the selected scenario and calculates the mean contribution of each taxon to the dissimilarity between groups (without permutation tests in this implementation). The top 20 contributing taxa are extracted and visualized using a bar plot generated with ggplot2, where contributions are displayed as percentages. Taxon names are italicized in accordance with taxonomic conventions. The results are exported both as a CSV table and as a PDF figure.
