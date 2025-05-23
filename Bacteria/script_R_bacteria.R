@@ -26,10 +26,10 @@ df_plot$Sample <- rownames(df_plot)
 
 # Add groups according to samples
 df_plot$Group <- case_when(
-  df_plot$Sample %in% paste0("F", 1:7)   ~ "F",
-  df_plot$Sample %in% paste0("F", 8:20)  ~ "G",
-  df_plot$Sample %in% paste0("F", 21:34) ~ "I",
-  df_plot$Sample %in% paste0("F", 35:43) ~ "S",
+  df_plot$Sample %in% paste0("P", 1:7)   ~ "F",
+  df_plot$Sample %in% paste0("P", 8:20)  ~ "G",
+  df_plot$Sample %in% paste0("P", 21:34) ~ "I",
+  df_plot$Sample %in% paste0("P", 35:43) ~ "S",
   TRUE ~ "Autre"
 )
 
