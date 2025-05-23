@@ -13,4 +13,9 @@ To visualize the dispersion index of our samples, we use the RStudio environment
 
 The complete script used here is available [here](Script_R/Script_beta.R)”.Similar to the previous Bash script, the '[Explanation-02](Explanation/Explanation_2.md)' section provides a detailed explanation of the code.
 
-The R script above provides an initial overview of sample dispersion. A more refined R script has been developed [here](Script_R/Script_PCoA_upgrade.R) to generate higher-quality PCoA plots.
+The R script above provides an initial overview of sample dispersion. A more refined R script has been developed [here](Script_R/Script_PCoA_upgrade.R) to generate higher-quality PCoA plots, as shown below (fig.1).
+
+![Capture d'écran 2025-05-23 151954](https://github.com/user-attachments/assets/e606008a-4b07-4548-addd-045de60a875e)
+
+Figure 1 : β-diversity analysis (PCoA - Jaccard) with group ellipses 
+
