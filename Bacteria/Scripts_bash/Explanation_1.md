@@ -6,5 +6,6 @@ In the first loop, the script iterates over all files starting with report_krake
  ![image](https://github.com/user-attachments/assets/f7c126f1-caf0-49f6-81cd-5108bffa5363)
 
 Figure 1 : example of a report file fragment
+
 Next, the script compiles a unique list of all taxon names found in the .tsv files. This is done using cut to extract the names, followed by sorting and deduplication with sort -u. The final list is stored in all_taxa.txt. In the third step, it generates the header of the presence/absence matrix by writing “Taxon” as the first column, followed by the names of the samples extracted from the .tsv files. The fourth and main loop reads each listed taxon. For each sample, the script checks whether the taxon is present in the corresponding file and retrieves the associated read count. If the taxon is absent, the count is set to zero. If the read count is greater than or equal to 10, a “1” is recorded in the matrix cell; otherwise, a “0” is recorded. Each row thus represents a taxon, and each column corresponds to a sample.
 Finally, at the end of the script, a message confirms that the binary presence/absence matrix has been successfully generated in the specified output file.
