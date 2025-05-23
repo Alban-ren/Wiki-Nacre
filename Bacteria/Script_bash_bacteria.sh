@@ -18,8 +18,8 @@ for f in "$DIR"/report_kraken_F*; do
   awk -F'\t' '
     {
       name = $6
-      sub(/^[ \t]+/, "", name)   # enlève l’indentation
-      print name "\t" $3         # $3 = reads directement assignés
+      sub(/^[ \t]+/, "", name)   # removes indentation
+      print name "\t" $3         # $3 = reads directly assigned
     }
   ' "$f" > "$TMPDIR/$sample.tsv"
 done
