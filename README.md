@@ -15,6 +15,6 @@ In order to better understand the mechanisms underlying tolerance and resistance
 
 * Explanations of the software and computational tools employed in these analyses (see the [general genomic](genomics/) section),
 
-* The code used for genome-related analyses (see the experiment section).
+* The code used for genome-related analyses (see the [script](genomics/Script_classification.md) section).
 
-You will also find similar explanations and scripts related to the identification of bacterial communities associated with Pinna nobilis and Pinna rudis tissues.
+You will also find similar explanations and scripts related to the identification of bacterial communities associated with Pinna nobilis and Pinna rudis tissues in the [bacteria](Bacteria/) section.
