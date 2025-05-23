@@ -19,3 +19,5 @@ The R script above provides an initial overview of sample dispersion. A more ref
 
 Figure 1 : β-diversity analysis (PCoA - Jaccard) with group ellipses 
 
+To further explore the data, a SIMPER analysis (Similarity Percentage Analysis) was also performed. This ecological method is used to identify which elements contribute most to the dissimilarity between two or more groups of samples, typically in terms of species or taxonomic composition. It therefore allows for the identification of taxa that most influence the bacterial taxonomic dispersion among individuals.The R script is also available [here](Script_R/Script_SIMPER.R), along with its explanation in the [Explanation-03](Explanation/Explanation_3.md) section.
+
