@@ -13,7 +13,7 @@ In order to better understand the mechanisms underlying tolerance and resistance
 
 * The different pipelines used for genome assembly of Pinna nobilis (see the [README_GENOMIC](genomics/README_GENOMIC.md) section),
 
-* Explanations of the software and computational tools employed in these analyses (see the [general genomic](genomics/) section),
+* Explanations of the software and computational tools employed in these analyses (see the [genomic](genomics/) section),
 
 * The code used for genome-related analyses (see the [script](genomics/Script_classification.md) section).
 
