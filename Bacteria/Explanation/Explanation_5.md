@@ -7,7 +7,7 @@ This R script is designed to visualize the bacterial community composition of mu
 The required R packages (vegan, reshape2, ggplot2, ggdendro, cowplot, scales, and ggtext) are first installed (commented for reproducibility) and then loaded into the session.
 
 2. Data loading and transposition
-The input file taxa_abundance_normalized_top50_families_name.tsv, containing normalized (relative) abundance data for the top 50 bacterial families, is read into R. The data is then transposed so that rows represent samples and columns represent bacterial families — the format required for distance-based ecological analyses.
+The input file [taxa_abundance_normalized_top50_families_name.tsv](../data/taxa_abundance_normalized_top50_familie_name.tsv), containing normalized (relative) abundance data for the top 50 bacterial families, is read into R. The data is then transposed so that rows represent samples and columns represent bacterial families — the format required for distance-based ecological analyses.
 
 3. Bray–Curtis dissimilarity and clustering
 A Bray–Curtis dissimilarity matrix is calculated using the vegdist function. This metric is widely used in microbial ecology to assess compositional differences. A hierarchical clustering is then performed (average linkage, or UPGMA), and the result is converted to a dendrogram object for plotting.
