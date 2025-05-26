@@ -11,7 +11,7 @@ The resulting binary matrix summarizes the presence or absence of bacterial taxa
 
 To visualize the dispersion index of our samples, we use the RStudio environment to perform beta diversity analysis and generate visualizations based on a binary presence/absence matrix of bacterial taxa. This approach allows us to analyze bacterial taxonomic diversity between samples and to conduct statistical tests assessing β-diversity differences across multiple sample groups. Since our samples originate from various localities (France, Spain, Greece, and Italy), we were able to compare bacterial community compositions across these geographic groups.
 
-The complete script used here is available [here](Script_R/Script_beta.R)”.Similar to the previous Bash script, the '[Explanation-02](Explanation/Explanation_2.md)' section provides a detailed explanation of the code.
+The complete script used here is available [here](Script_R/Script_beta.R).Similar to the previous Bash script, the '[Explanation-02](Explanation/Explanation_2.md)' section provides a detailed explanation of the code.
 
 The R script above provides an initial overview of sample dispersion. A more refined R script has been developed [here](Script_R/Script_PCoA_upgrade.R) to generate higher-quality PCoA plots, as shown below (fig.1).
 
