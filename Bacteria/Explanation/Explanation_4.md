@@ -6,13 +6,7 @@ The script then builds an absolute abundance matrix, where rows represent bacter
 
 In a second step, the script produces a relative (or normalized) abundance matrix. For each cell, abundance is expressed as the proportion of total reads in the sample:
 
-Normalized abundance
-=
-Reads assigned to a family
-Total reads in the sample
-Normalized abundance= 
-Total reads in the sample
-Reads assigned to a family
+Normalized abundance= (Reads for a family)/(Total reads for a sample)
 ​
  
 This normalization enables the comparison of taxonomic profiles across samples with varying sequencing depths. It is essential for comparative analyses, such as stacked bar plot visualizations or similarity analyses using dendrograms. The final output consists of two TSV files: one containing the absolute abundances (taxa_abundance_absolute_top50_families.tsv) and the other the normalized abundances (taxa_abundance_normalized_top50_families.tsv), both focused on the 50 most dominant bacterial families.
