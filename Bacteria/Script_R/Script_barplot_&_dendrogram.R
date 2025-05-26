@@ -8,31 +8,31 @@ library(cowplot)
 library(scales)
 library(ggtext)
 
-# 1. Reading & transposition
+# 1. Lecture & transposition
 df  <- read.table(
   "taxa_abundance_normalized_top50_families_name.tsv",
   header    = TRUE, sep = "\t",
   row.names = 1, check.names = FALSE
 )
-mat <- t(as.matrix(df))  # samples × families
+mat <- t(as.matrix(df))  # échantillons × familles
 
 # 2. Bray–Curtis + clustering
 dist_bc <- vegdist(mat, method = "bray")
 hc      <- hclust(dist_bc, method = "average")
 
-# 3. Preparing the dendrogram
+# 3. Préparation du dendrogramme
 dend  <- as.dendrogram(hc)
 ddata <- dendro_data(dend, type = "rectangle")
 
-# 4. Sample order
+# 4. Ordre des échantillons
 order_labels <- ddata$labels$label
 mat_ord      <- mat[order_labels, , drop = FALSE]
 n_samp       <- length(order_labels)
 
-# 5. Percentage changeover
+# 5. Passage en pourcentage
 mat_pct <- mat_ord * 100
 
-# 6. Long format + continuous position
+# 6. Format long + position continue
 plot_df <- as.data.frame(mat_pct)
 plot_df$Sample <- rownames(plot_df)
 molten <- melt(
@@ -44,7 +44,7 @@ molten <- melt(
 molten$Sample <- factor(molten$Sample, levels = order_labels)
 molten$SampleNum <- as.numeric(molten$Sample)
 
-# 7. Grouping rare families into “Other
+# 7. Regrouper familles rares en "Other"
 abundances <- aggregate(Abundance ~ Family, data = molten, sum)
 abundances <- abundances[order(-abundances$Abundance), ]
 top_n <- 25
@@ -53,12 +53,12 @@ top_families <- abundances$Family[1:top_n]
 molten$Family <- as.character(molten$Family)
 molten$Family[!(molten$Family %in% top_families)] <- "Other"
 
-# 8. Alphabetical order + “Other” at the end
+# 8. Ordre alphabétique + "Other" à la fin
 families <- sort(setdiff(unique(molten$Family), "Other"))
 families <- c(families, "Other")
 molten$Family <- factor(molten$Family, levels = families)
 
-# 9. Customized palette
+# 9. Palette personnalisée
 custom_cols <- c(
   "red","black","green","blue","#ff3366","#ff6699","#ff66cc","#003300","#006600",
   "#336633","#66cc66","#669933","#66cc00","#33cc00","#00cc33","#33ff66","#66ff99",
@@ -74,7 +74,7 @@ pal_cols <- custom_cols[1:length(families)]
 pal <- setNames(pal_cols, families)
 pal["Other"] <- "grey70"
 
-# 10. Legends in italics except “Other”.
+# 10. Légendes en italique sauf "Other"
 families_labels <- sapply(families, function(fam) {
   if (fam == "Other") fam else paste0("<i>", fam, "</i>")
 })
@@ -133,7 +133,7 @@ p_bar <- ggplot(molten, aes(
     panel.grid.major.y = element_blank()
   )
 
-# 12. Dendrogram
+# 12. Dendrogramme
 max_h <- max(segment(ddata)$y)
 p_dend <- ggplot(segment(ddata),
                  aes(x = y, y = x, xend = yend, yend = xend)) +
@@ -157,7 +157,7 @@ p_dend <- ggplot(segment(ddata),
     panel.grid   = element_blank()
   )
 
-# 13. Final assembly
+# 13. Assemblage final
 legend      <- get_plot_component(p_bar, "guide-box-bottom")
 p_bar_clean <- p_bar + theme(legend.position = "none")
 
