@@ -9,6 +9,6 @@ In a second step, the script produces a relative (or normalized) abundance matri
 Normalized abundance= (Reads for a family)/(Total reads for a sample)
 ​
  
-This normalization enables the comparison of taxonomic profiles across samples with varying sequencing depths. It is essential for comparative analyses, such as stacked bar plot visualizations or similarity analyses using dendrograms. The final output consists of two TSV files: one containing the absolute abundances (taxa_abundance_absolute_top50_families.tsv) and the other the normalized abundances (taxa_abundance_normalized_top50_families.tsv), both focused on the 50 most dominant bacterial families.
+This normalization enables the comparison of taxonomic profiles across samples with varying sequencing depths. It is essential for comparative analyses, such as stacked bar plot visualizations or similarity analyses using dendrograms. The final output consists of two TSV files: one containing the absolute abundances (taxa_abundance_absolute_top50_families.tsv) and the other the normalized abundances ([taxa_abundance_normalized_top50_families.tsv](../data/taxa_abundance_normalized_top50_families.tsv)), both focused on the 50 most dominant bacterial families.
 
 In summary, this script automates the transition from raw Kraken2 output to a synthetic representation of dominant bacterial families, thereby facilitating ecological and statistical interpretation of microbial community composition across samples.
