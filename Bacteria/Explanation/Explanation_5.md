@@ -1,3 +1,6 @@
+# Code explanation for Script_barplot_&_dendrogram.R
+------------------------------------------------------
+
 This R script is designed to visualize the bacterial community composition of multiple samples using a combined stacked barplot and dendrogram. This dual-panel figure allows for an integrated view of taxonomic composition and inter-sample similarity.
 
 1. Package installation and loading
