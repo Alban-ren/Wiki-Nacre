@@ -27,4 +27,4 @@ To conclude the bacterial analysis, we highlighted the abundance of the most dom
 
 Figure 2 : Stacked bar plot with hierarchical clustering (dendrogram) showing bacterial composition and abundance in Pinna spp samples.
 
-To generate this type of plot, we first created a [Bash script](Scripts_bash/Script_abundance.sh) to calculate the abundance of each bacterial family and to retain the 20 most abundant ones, grouping the others into an "Other" category ([Explanation-04 (Explanation/Explanation_4.md)). We then developed an [R script](Script_R/Script_barplot_&_dendrogram.R)(Explanation-05) to visualize the resulting data as a bar plot and a dendrogram.
+To generate this type of plot, we first created a [Bash script](Scripts_bash/Script_abundance.sh) to calculate the abundance of each bacterial family and to retain the 20 most abundant ones, grouping the others into an "Other" category ([Explanation-04](Explanation/Explanation_4.md)). We then developed an [R script](Script_R/Script_barplot_&_dendrogram.R)(Explanation-05) to visualize the resulting data as a bar plot and a dendrogram.
