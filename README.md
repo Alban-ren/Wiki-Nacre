@@ -12,7 +12,7 @@ It is important to study gene expression differences and potential variations in
 
 # In this wiki, you will find:
 
-* The different pipelines used for genome assembly of *Pinna nobilis* (see the [README_GENOMIC](genomics/README_GENOMIC.md) section),
+* The different pipelines used for for transcriptome assembly of *Pinna nobilis* (see the [README_GENOMIC](genomics/README_GENOMIC.md) section),
 
 * Explanations of the software and computational tools employed in these analyses (see the [genomic](genomics/) section),
 
