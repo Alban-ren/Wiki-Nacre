@@ -1,8 +1,8 @@
-# Assembling the “clean” genomes of Pinna nobilis and Pinna rudis species
+# Assembling the “clean” genomes of *Pinna nobilis* and *Pinna rudis* species
 ------------------------------------------------------------------------
 
-It is essential to obtain a complete genome from a healthy Pinna nobilis individual, which can serve as a reference for comparison with genomes from individuals infected by the parasite Haplosporidium pinnae.
-The reference genome is assembled from transcriptomes of P. nobilis and P. rudis, composed of highly accurate short reads obtained from the NCBI SRA database. These transcriptomes are presumed to be free from H. pinnae contamination.
+It is essential to obtain a complete genome from a healthy *Pinna nobilis* individual, which can serve as a reference for comparison with genomes from individuals infected by the parasite *Haplosporidium pinnae*.
+The reference genome is assembled from transcriptomes of *P. nobilis* and *P. rudis*, composed of highly accurate short reads obtained from the NCBI SRA database. These transcriptomes are presumed to be free from *H. pinnae* contamination.
 
 To ensure this, the raw data are first “cleaned” using [Kraken2](./Kraken_2.md#Kraken2) and SeqKit, which detect, identify, and remove potential bacterial contaminations from a database containing most of the known marine bacteria (see the [script](./Script_classification.md) section for more details on the code) . The quality of the transcriptomic data is then assessed using [FastQC](./FastQC.md#FastQC). Based on these quality reports, Trimmomatic, an open-source software, is used to trim low-quality bases from the beginning and/or end of the reads in order to correct alignment errors. A second FastQC analysis is performed to confirm the improvement in read quality.
 
