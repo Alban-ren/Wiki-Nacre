@@ -19,7 +19,7 @@ The R script above provides an initial overview of sample dispersion. A more ref
 
 ![Capture d'écran 2025-05-23 151954](https://github.com/user-attachments/assets/e606008a-4b07-4548-addd-045de60a875e)
 
-Figure 1 : β-diversity analysis (PCoA - Jaccard) with group ellipses 
+***Figure 1 : β-diversity analysis (PCoA - Jaccard) with group ellipses*** 
 
 To further explore the data, a SIMPER analysis (Similarity Percentage Analysis) was also performed. This ecological method is used to identify which elements contribute most to the dissimilarity between two or more groups of samples, typically in terms of species or taxonomic composition. It therefore allows for the identification of taxa that most influence the bacterial taxonomic dispersion among individuals.The R script is also available [here](Script_R/Script_SIMPER.R), along with its explanation in the [Explanation-03](Explanation/Explanation_3.md) section.
 
@@ -27,7 +27,7 @@ To conclude the bacterial analysis, we highlighted the abundance of the most dom
 
 ![Capture d'écran 2025-05-26 093338](https://github.com/user-attachments/assets/8454e99a-37f3-469b-8ed7-934201bff5e2)
 
-Figure 2 : Stacked bar plot with hierarchical clustering (dendrogram) showing bacterial composition and abundance in Pinna spp samples.
+***Figure 2 : Stacked bar plot with hierarchical clustering (dendrogram) showing bacterial composition and abundance in Pinna spp samples.***
 
 To generate this type of plot, we first created a [Bash script](Scripts_bash/Script_abundance.sh) to calculate the abundance of each bacterial family and to retain the 20 most abundant ones, grouping the others into an "Other" category ([Explanation-04](Explanation/Explanation_4.md)). We then developed an [R script](Script_R/Script_barplot_&_dendrogram.R) ([Explanation-05](Explanation/Explanation_5.md)) to visualize the resulting data as a bar plot and a dendrogram.
 
