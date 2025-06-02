@@ -1,5 +1,5 @@
-##
-
+## Identification of TLRs in *Pinna nobilis* and *Pinna rudis*
+-------------------------------------------------------------------
 
 This section describes the identification and classification (according to Gerdol et al.,2017) of the genes encoding TLRs in the genomes of Pinna nobilis and Pinna rudis.
 
