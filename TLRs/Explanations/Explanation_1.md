@@ -1,5 +1,5 @@
-
-
+## Code explanation for Script_TLRs.sh
+-------------------------------------------
 
 This [Bash script](../Scripts/Script_TLRs.sh) is designed to automatically extract RNA transcripts corresponding to Toll-like receptors (TLRs) using results from both DIAMOND functional annotation and BRAKER3 structural annotation. It begins by filtering the [DIAMOND output file](../data/Annoted_DIAMOND.tsv) (diamond_output.tsv) to retain only entries annotated as "toll-like receptor", saving the corresponding protein IDs.
 
