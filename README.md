@@ -19,6 +19,6 @@ These taxa related to *P. nobilis* exhibit a more robust immune response, notabl
 
 * The code used for genome-related analyses (see the [script](genomics/Script_classification.md) section).
 
-* A section explaining the purpose of protein annotation in Pinna genomes, such as the identification of Toll-like receptors (TLRs).
+* A section explaining the purpose of protein annotation in Pinna genomes, such as the identification of Toll-like receptors (TLRs) (see the [README_TLR](TLRs/README_TLR.md) section).
 
 You will also find similar explanations and scripts related to the identification of bacterial communities associated with *Pinna nobilis* and *Pinna rudis* tissues in the [bacteria](Bacteria/) section.
