@@ -8,6 +8,7 @@ The main objective of this study is to identify differences in gene expression a
 Although some cases of resistance in *P. nobilis* and tolerance in *P. rudis* and *P. nobilis* × *P. rudis* hybrids have been reported, the latter two appear to be naturally resistant to the parasite (Coupé et al., 2022).
 
 It is important to study gene expression differences and potential variations in transcribed RNAs, both between species and between individuals with different sensitivities to *Haplosporidium pinnae*.
+These taxa related to *P. nobilis* exhibit a more robust immune response, notably through differential regulation of Toll-like receptors (TLRs, rapidly evolving immune genes) and earlier activation of immune-related genes during infection (Coupé et al., 2022).
 
 
 # In this wiki, you will find:
@@ -17,5 +18,7 @@ It is important to study gene expression differences and potential variations in
 * Explanations of the software and computational tools employed in these analyses (see the [genomic](genomics/) section),
 
 * The code used for genome-related analyses (see the [script](genomics/Script_classification.md) section).
+
+* A section explaining the purpose of protein annotation in Pinna genomes, such as the identification of Toll-like receptors (TLRs).
 
 You will also find similar explanations and scripts related to the identification of bacterial communities associated with *Pinna nobilis* and *Pinna rudis* tissues in the [bacteria](Bacteria/) section.
