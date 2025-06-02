@@ -1,4 +1,4 @@
-# Analysis of the bacterial taxonomic composition in tissues of Pinna nobilis and Pinna rudis
+# Analysis of the bacterial taxonomic composition in tissues of *Pinna nobilis* and *Pinna rudis*
 ----------------------------------------------------------------------------------------------
 
 This section describes the analysis of bacterial communities associated with *Pinna nobilis* and *Pinna rudis* tissues based on non-targeted RNA-seq data.
