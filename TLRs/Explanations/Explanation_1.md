@@ -9,7 +9,8 @@ This pipeline provides a fast and efficient way to isolate TLR-related sequences
 
 The resulting coding sequences are then submitted to the SMART (Simple Modular Architecture Research Tool) bioinformatics platform, which enables the identification of functional domains within the proteins (fig.1).
 
-![Capture d'écran 2025-06-02 105306](https://github.com/user-attachments/assets/c2f5ce9e-e09c-4c26-aef6-57062e56df57)
+![Capture d'écran 2025-06-02 135124](https://github.com/user-attachments/assets/2c65e173-ab01-40de-8483-ecfecec76101)
+
 
 ***Figure 1 : Example of 3 TLRs structured by SMART for Pinna nobilis***
 
