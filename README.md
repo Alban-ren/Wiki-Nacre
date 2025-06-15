@@ -1,21 +1,21 @@
 # Wiki noble pen shell
 ------------------------
-This wiki has been created as part of a research project investigating the impact of the protozoan parasite *Haplosporidium pinnae* on the transcriptome of noble pen shell populations (*Pinna nobilis* and *Pinna rudis*). The study is conducted under the supervision of Stéphane Coupé.
+This repository has been created as part of a research project investigating genomic and transcriptomic features related to the resistance of the Mediterranean fan mussel (*Pinna nobilis*) and its related species (*Pinna rudis*) to the protozoan parasite *Haplosporidium pinnae*. The study was conducted under the supervision of Dr. Stéphane Coupé at the Mediterranean Institute of Oceanography (MIO), EMBIO team.
 
-The main objective of this study is to identify differences in gene expression and variations in transcribed RNA in *P. nobilis* and *P. rudis* in response to infection by the protozoan parasite *Haplosporidium pinnae*, through transcriptomic comparison between healthy and infected individuals.
+The main goal of this work was to contribute to the bioinformatic analyses required for genome assembly, annotation, and functional gene characterization of *Pinna spp*., with a particular focus on immune-related genes and associated bacterial communities.
 
-*H. pinnae* is a parasitic protozoan that infects the Mediterranean endemic bivalve *Pinna nobilis* (and its closely related species *Pinna rudis*), commonly known as the noble pen shell (Linnaeus, 1758). This infection is responsible for mass mortality events (MMEs) in noble pen shell populations and facilitates the entry of other pathogenic organisms, contributing to a multifactorial disease (Coupé et al., 2022).
-Although some cases of resistance in *P. nobilis* and tolerance in *P. rudis* and *P. nobilis* × *P. rudis* hybrids have been reported, the latter two appear to be naturally resistant to the parasite (Coupé et al., 2022).
+*H. pinnae* is a parasitic protozoan that infects the Mediterranean endemic bivalve *Pinna nobilis* (and its closely related species *Pinna rudis*), commonly known as the noble pen shell (Linnaeus, 1758). This infection is responsible for mass mortality events (MMEs) in noble pen shell populations and facilitates the entry of other pathogenic organisms, contributing to a multifactorial disease (Coupé *et al*., 2022).
+Although some cases of resistance in *P. nobilis* and tolerance in *P. rudis* and *P. nobilis* × *P. rudis* hybrids have been reported, the latter two appear to be naturally resistant to the parasite (Coupé *et al.*, 2022).
 
-It is important to study gene expression differences and potential variations in transcribed RNAs, both between species and between individuals with different sensitivities to *Haplosporidium pinnae*.
-These taxa related to *P. nobilis* exhibit a more robust immune response, notably through differential regulation of Toll-like receptors (TLRs, rapidly evolving immune genes) and earlier activation of immune-related genes during infection (Coupé et al., 2022).
+It is important to generate high-quality transcriptome assemblies to provide reference sequences for the identification and characterization of immune-related genes involved in resistance to *Haplosporidium pinnae* in *Pinna nobilis* and related taxa.
+In this study, de novo transcriptome assemblies were produced and used to support genome annotation and to extract Toll-like receptor (TLR) sequences. The identified TLR repertoires reveal substantial diversification of these rapidly evolving immune genes, which may reflect species-specific adaptation to marine pathogenic pressures (Coupé *et al.*, 2022; Gerdol *et al*., 2017).
 
 
 # In this wiki, you will find:
 
-* The different pipelines used for for transcriptome assembly of *Pinna nobilis* (see the [README_GENOMIC](genomics/README_GENOMIC.md) section),
+* The different pipelines used for transcriptome assembly and completeness assessment of Pinna nobilis and Pinna rudis, providing references for genome annotation (see the [README_GENOMIC](genomics/README_GENOMIC.md) section),
 
-* Explanations of the software and computational tools employed in these analyses (see the [genomic](genomics/) section),
+* Explanations of the software and computational tools employed for genome assembly, contamination filtering, and gene annotation (see the [genomic](genomics/) section),
 
 * The code used for genome-related analyses (see the [script](genomics/Script_classification.md) section).
 
