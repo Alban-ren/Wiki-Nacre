@@ -14,4 +14,4 @@ Following assembly, gene prediction and annotation were performed. Open reading 
 
 The high-quality transcriptomic and genomic assemblies produced in this workflow served as essential resources for downstream analyses, including the identification and classification of Toll-like receptors (TLRs), as well as the exploratory characterization of tissue-associated bacterial communities.
 
-All scripts and pipelines developed for these analyses—including preprocessing, assembly, annotation, and quality control steps—are available in the [genomics](genomics) folder of this repository. These resources were developed using Bash and R, and aim to ensure full reproducibility for future research on *Pinna spp*. genomic resistance mechanisms.
+All scripts and pipelines developed for these analyses—including preprocessing, assembly, annotation, and quality control steps—are available in the [genomics](./genomics) folder of this repository. These resources were developed using Bash and R, and aim to ensure full reproducibility for future research on *Pinna spp*. genomic resistance mechanisms.
