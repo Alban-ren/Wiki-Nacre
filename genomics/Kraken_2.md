@@ -18,7 +18,7 @@ kraken2 --db kraken2/name_db/ --use-names --threads n --confidence n --report fi
 * output_name is the detailed read-level classification file. Each line corresponds to a read, indicating whether it was classified (C) or unclassified (U), along with the assigned taxon.
 * sample_name is the name of the sample tested.
 
-You can see the entire script we used for our sample in the [experiment](./Experiment_01.md#experiment-script) section.
+You can see the entire script we used for our sample in the [script](Script_classification.md) section.
 
 To achieve more accurate quantification of bacterial taxa from a sample, the complementary software Bracken is required.
 Bracken allows more precise estimation of alpha and beta diversity, even at the species level (Lu et al., 2022). That said, Bracken is typically used in contexts where target species are directly amplified, such as through PCR-based techniques.
