@@ -13,6 +13,3 @@ Seqkit grep -v -f reads_1_Pn_haemocytes_toremove.txt SRR21820831.fastq -o 1_Pn_h
 
 fastqc 1_Pn_haemocytes_RNA_filtered_fastq
 
-trimmomatic ? code  -> oui
-
-* galaxy 
